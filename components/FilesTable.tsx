@@ -46,6 +46,14 @@ const FilesTable = ({ files }) => {
       },
 
       {
+        Header: 'Status',
+        accessor: (data) => <data className="status"></data>,
+        width: '8%',
+        maxWidth: '8%',
+        disableFilters: true,
+      },
+
+      {
         Header: 'Files',
         accessor: (data) => data.aggregatedFiles + 1,
         width: '8%',
